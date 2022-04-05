@@ -30,17 +30,17 @@ Constructeur
 
         Lampe lampe2 = new Lampe("test");
         try {
-            lampe2 = list.get(indiceLampe);
-            lampe2.allumer();
+            list.get(indiceLampe).allumer();
         }catch (IndexOutOfBoundsException e2){
 
         }
+
+
     }
     public void desactiverLampe(int indiceLampe){
         Lampe lampe = new Lampe("test");
         try {
-            lampe = list.get(indiceLampe);
-            lampe.eteindre();
+            list.get(indiceLampe).eteindre();
         }catch (IndexOutOfBoundsException e){
 
         }
