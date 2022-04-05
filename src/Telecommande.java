@@ -2,29 +2,56 @@ import java.util.ArrayList;
 
 public class Telecommande {
 
-    ArrayList<Lampe> list = new ArrayList<>();
+    ArrayList<Lampe> list;
 /*
-Constructrices
+Constructeur
  */
+    public Telecommande(){
+        list = new ArrayList<>();
+    }
 /*
   Méthodes
 */
 
 
-    public void activerTour(){
-        throw new Error (" code non ecrit ");
+    public void activerTout(){
+        int taille = list.size();
+        for(int i =0; i<taille; i++){
+            activerLampe(i);
+        }
+
     }
     public void ajouterLampe(Lampe l){
-        throw new Error (" code non ecrit ");
+        if(l != null){
+            list.add(l);
+        }
     }
     public void activerLampe(int indiceLampe){
-        throw new Error (" code non ecrit ");
+
+        Lampe lampe2 = new Lampe("test");
+        try {
+            lampe2 = list.get(indiceLampe);
+            lampe2.allumer();
+        }catch (IndexOutOfBoundsException e2){
+
+        }
     }
     public void desactiverLampe(int indiceLampe){
-        throw new Error (" code non ecrit ");
+        Lampe lampe = new Lampe("test");
+        try {
+            lampe = list.get(indiceLampe);
+            lampe.eteindre();
+        }catch (IndexOutOfBoundsException e){
+
+        }
+
+
+
     }
     @Override
     public String toString() {
-        throw new Error (" code non ecrit ");
+        return "Telecommande{" +
+                "list=" + list +
+                '}';
     }
 }
