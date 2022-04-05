@@ -1,6 +1,6 @@
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * classe de test permettant de tester la classe Lampe
@@ -17,7 +17,7 @@ public class LampeTest {
 
 		// verification
 		boolean res = l.isAllume();
-		assertEquals("une nouvelle lampe devrait etre eteinte", false, res);
+		assertEquals(false, res, "une nouvelle lampe devrait etre eteinte");
 	}
 
 	@Test
@@ -33,7 +33,7 @@ public class LampeTest {
 
 		// verification
 		boolean res = l.isAllume();
-		assertEquals("apres allumer, la lampe devrait etre allumee", true, res);
+		assertEquals( true, res,"apres allumer, la lampe devrait etre allumee");
 	}
 	
 	@Test
@@ -50,7 +50,7 @@ public class LampeTest {
 
 		// verification
 		boolean res = l.isAllume();
-		assertEquals("apres allumer, la lampe devrait etre allumee", true, res);
+		assertEquals( true, res,"apres allumer, la lampe devrait etre allumee");
 	}
 
 	@Test
@@ -67,7 +67,7 @@ public class LampeTest {
 
 		// verification
 		boolean res = l.isAllume();
-		assertEquals("apres eteindre, la lampe devrait etre eteinte", false, res);
+		assertEquals( false, res,"apres eteindre, la lampe devrait etre eteinte");
 	}
 	
 	@Test
@@ -82,7 +82,7 @@ public class LampeTest {
 		String r=""+l;
 		
 		//verification
-		assertEquals("affichage devrait etr off","lampe1: Off",r);
+		assertEquals("lampe1: Off",r, "affichage devrait etr off");
 	}
 	
 	@Test
@@ -98,7 +98,7 @@ public class LampeTest {
 		String r=""+l;
 		
 		//verification
-		assertEquals("affichage devrait etr off","lampe1: On",r);
+		assertEquals("lampe1: On",r,"affichage devrait etr off");
 
 	}
 
