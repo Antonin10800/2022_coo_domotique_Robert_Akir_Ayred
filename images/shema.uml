@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/ASUS G713Q/IUT/S2/ConceptionOrienteObjet/TD06/2022_coo_domotique_Robert_Akir_Ayred/src</OriginalElement>
+  <nodes>
+    <node x="89.625" y="-173.5">LampeTest</node>
+    <node x="111.625" y="0.0">Lampe</node>
+    <node x="0.0" y="217.0">Telecommande</node>
+    <node x="457.5" y="0.0">Hifi</node>
+    <node x="131.01785714285714" y="434.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Telecommande" target="Lampe" relationship="CREATE">
+      <point x="47.5" y="-82.5" />
+      <point x="142.5" y="196.0" />
+      <point x="306.0" y="196.0" />
+      <point x="306.0" y="186.0" />
+      <point x="222.625" y="186.0" />
+      <point x="37.0" y="82.5" />
+    </edge>
+    <edge source="Telecommande" target="Lampe" relationship="TO_MANY">
+      <point x="-47.5" y="-82.5" />
+      <point x="47.5" y="186.0" />
+      <point x="148.625" y="186.0" />
+      <point x="-37.0" y="82.5" />
+    </edge>
+    <edge source="Main" target="Telecommande" relationship="CREATE">
+      <point x="0.0" y="-49.0" />
+      <point x="255.01785714285714" y="408.0" />
+      <point x="95.0" y="408.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="Main" target="Lampe" relationship="CREATE">
+      <point x="0.0" y="-49.0" />
+      <point x="255.01785714285714" y="408.0" />
+      <point x="412.5" y="408.0" />
+      <point x="412.5" y="196.0" />
+      <point x="306.0" y="196.0" />
+      <point x="306.0" y="186.0" />
+      <point x="222.625" y="186.0" />
+      <point x="37.0" y="82.5" />
+    </edge>
+    <edge source="LampeTest" target="Lampe" relationship="CREATE">
+      <point x="0.0" y="-82.0" />
+      <point x="185.625" y="186.0" />
+      <point x="222.625" y="186.0" />
+      <point x="37.0" y="82.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="296.0" y="266.0" />
+  <SelectedNodes>
+    <node>LampeTest</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
