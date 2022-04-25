@@ -12,6 +12,15 @@ Constructeur
 /*
   Méthodes
 */
+    public void allumerHifi(int indiceList){
+        //Hifi hifi = new Hifi();
+        list.get(indiceList).allumer();
+    }
+    public void eteindreHifi(int indiceList){
+        //Hifi hifi = new Hifi();
+        list.get(indiceList).eteindre();
+    }
+
 
 
     public void activerTout(){

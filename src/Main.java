@@ -51,7 +51,7 @@ public class Main {
 				System.out.println("== activer "+choix+"==");
 				t.activerLampe(choix);
 			}
-			// si la commande est - on descactive
+			// si la commande est - on desactive
 			else if (com.equals("-")) {
 				System.out.println("== desactiver "+choix+"==");
 				t.desactiverLampe(choix);

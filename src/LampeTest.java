@@ -55,14 +55,14 @@ public class LampeTest {
 
 	@Test
 	/**
-	 * test eteindre une lampe allumee
+	 * test éteindre une lampe allumée
 	 */
-	public void testeteindre_allumee() {
+	public void testEteindre_allumée() {
 		// preparation des donnees
 		Lampe l = new Lampe("lampe1");
 		l.allumer();
 		
-		//methode testee
+		//methode testée
 		l.eteindre();
 
 		// verification
@@ -87,18 +87,18 @@ public class LampeTest {
 	
 	@Test
 	/**
-	 * test to String lampe allumee
+	 * test to String lampe allumée
 	 */
 	public void testToString_allumee() {
 		// preparation des donnees
 		Lampe l = new Lampe("lampe1");
 		l.allumer();
 		
-		//methode testee
+		//methode testée
 		String r=""+l;
 		
 		//verification
-		assertEquals("lampe1: On",r,"affichage devrait etr off");
+		assertEquals("lampe1: On",r,"affichage devrait être off");
 
 	}
 
