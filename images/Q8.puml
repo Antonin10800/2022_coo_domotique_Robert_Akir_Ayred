@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+class Telecommande{
+    - list <Appareils>
+
+
+   + activerTout()
+   + toString() : String
+}
+class (Lampe){
+- nom : String
+- allumer : boolean
+
++ toString() : String
+
+}
+class Hifi{
+- son : int
++ allumer()
++ toString() : String
+}
+
+class Television{
+
++allumer()
++eteindre()
+}
+
+interface Appareils{
++ allumer(Int)
++ eteindre(Int)
++ toString() : String
++ isAllumer() : boolean
+}
+
+Hifi"*" <-- "*"Appareils : - hifis
+Lampe "*"<--"*" Appareils : -lampes
+Television "*"<--"*" Appareils : -televisions
+Telecommande <-- Appareils
+@enduml
