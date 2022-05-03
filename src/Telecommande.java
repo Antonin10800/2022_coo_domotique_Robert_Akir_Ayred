@@ -1,6 +1,4 @@
-package src;
 
-import src.Appareils;
 
 import java.util.ArrayList;
 
