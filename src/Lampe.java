@@ -1,3 +1,5 @@
+import src.Appareils;
+
 /**
  * La classe Lampe qui represente une lampe qu'on peut allumer et eteindre.
  * 
@@ -5,7 +7,7 @@
  * prive et manipulable par les methodes allumer et eteindre
  */
 
-public class Lampe {
+public class Lampe implements Appareils {
 
 	/**
 	 * nom de la lampe
@@ -60,7 +62,7 @@ public class Lampe {
 	 * 
 	 * @return etat de la lampe
 	 */
-	public boolean isAllume() {
+	public boolean isAllumer() {
 		return allume;
 	}
 }
