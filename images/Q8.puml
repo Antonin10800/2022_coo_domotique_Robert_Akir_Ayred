@@ -15,25 +15,32 @@ class (Lampe){
 - nom : String
 - allumer : boolean
 + toString() : String
-
++ allumer()
++ eteindre()
++ isAllumer() : boolean
 }
 class Hifi{
 - son : int
--allumer : boolean
+- allumer : boolean
++ isAllumer() : boolean
 + allumer()
 + toString() : String
++ eteindre()
 }
 
 class Television{
 -allumer : boolean
 +allumer()
 +eteindre()
++ isAllumer() : boolean
 }
 
 interface Appareils{
 
 + toString() : String
 + isAllumer() : boolean
++ allumer()
++eteindre()
 }
 
 Hifi ..|> Appareils
