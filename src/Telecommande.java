@@ -1,10 +1,12 @@
+package src;
+
 import src.Appareils;
 
 import java.util.ArrayList;
 
 public class Telecommande {
 
-    ArrayList<Apprareils> list;
+    ArrayList<Appareils> list;
 
 
     /*
@@ -23,7 +25,7 @@ public void allumerApprareil(int indice){
     list.get(indice).allumer();
 }
 public void eteindreApprareil(int i){
-    list.get(indice).eteindre();
+    list.get(i).eteindre();
 }
     public void activerTout() {
         int taille = list.size();

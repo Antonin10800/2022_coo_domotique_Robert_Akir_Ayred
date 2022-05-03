@@ -5,26 +5,27 @@
 class Telecommande{
 
 
-   + allumer(Int)
+   + allumerAppareils(Int)
    + eteindre(Int)
    + activerTout()
    + toString() : String
+   + ajouterAppareils(Appareils)
 }
 class (Lampe){
 - nom : String
 - allumer : boolean
-
 + toString() : String
 
 }
 class Hifi{
 - son : int
+-allumer : boolean
 + allumer()
 + toString() : String
 }
 
 class Television{
-
+-allumer : boolean
 +allumer()
 +eteindre()
 }
@@ -36,7 +37,7 @@ interface Appareils{
 }
 
 Hifi ..|> Appareils
-Lampe ..|>"*" Appareils
-Television "*"..|>"*" Appareils
+Lampe ..|> Appareils
+Television ..|> Appareils
 Telecommande "*" --> "*"  Appareils : - appareils
 @enduml
