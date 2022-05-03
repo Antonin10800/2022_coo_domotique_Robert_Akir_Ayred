@@ -1,7 +1,9 @@
+import src.Appareils;
+
 /**
  * classe qui represente une chaine hifi
  */
-class Hifi {
+class Hifi implements Appareils {
 
 	/**
 	 * l'intensite du son de la chaine on suppose que la chaine est eteinte si
@@ -29,12 +31,22 @@ class Hifi {
 
 	/**
 	 * surcharge de la methode affichage sous la forme "Hifi:10"
-	 * 
+	 *
 	 * @return descriptif sous forme de chaine
 	 */
 	public String toString() {
 		String r = "";
 		r += "Hifi:" + son;
 		return (r);
+	}
+
+	@Override
+	public boolean isAllumer() {
+		if (son == 0) {
+			return false;
+
+		} else {
+			return true;
+		}
 	}
 }
