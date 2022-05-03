@@ -35,8 +35,8 @@ interface Appareils{
 + isAllumer() : boolean
 }
 
-Hifi"*" <-- "*"Appareils : - hifis
-Lampe "*"<--"*" Appareils : -lampes
-Television "*"<--"*" Appareils : -televisions
-Telecommande <-- Appareils
+Hifi"*" --|> "*"Appareils : - hifis
+Lampe "*"--|>"*" Appareils : -lampes
+Television "*"--|>"*" Appareils : -televisions
+Telecommande ..|>   Appareils
 @enduml
