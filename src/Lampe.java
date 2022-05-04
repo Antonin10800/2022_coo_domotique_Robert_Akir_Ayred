@@ -1,4 +1,4 @@
-import src.Appareils;
+
 
 /**
  * La classe Lampe qui represente une lampe qu'on peut allumer et eteindre.

@@ -40,7 +40,9 @@ public void eteindreApprareil(int i){
     }
 
 
-
+public int getNombre(){
+    return this.list.size();
+}
     @Override
     public String toString() {
         return "Telecommande{" +

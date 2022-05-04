@@ -16,7 +16,7 @@ public class LampeTest {
 		Lampe l = new Lampe("lampe1");
 
 		// verification
-		boolean res = l.isAllume();
+		boolean res = l.isAllumer();
 		assertEquals(false, res, "une nouvelle lampe devrait etre eteinte");
 	}
 
@@ -32,7 +32,7 @@ public class LampeTest {
 		l.allumer();
 
 		// verification
-		boolean res = l.isAllume();
+		boolean res = l.isAllumer();
 		assertEquals( true, res,"apres allumer, la lampe devrait etre allumee");
 	}
 	
@@ -49,7 +49,7 @@ public class LampeTest {
 		l.allumer();
 
 		// verification
-		boolean res = l.isAllume();
+		boolean res = l.isAllumer();
 		assertEquals( true, res,"apres allumer, la lampe devrait etre allumee");
 	}
 
@@ -66,7 +66,7 @@ public class LampeTest {
 		l.eteindre();
 
 		// verification
-		boolean res = l.isAllume();
+		boolean res = l.isAllumer();
 		assertEquals( false, res,"apres eteindre, la lampe devrait etre eteinte");
 	}
 	

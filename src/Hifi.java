@@ -1,4 +1,4 @@
-import src.Appareils;
+
 
 /**
  * classe qui represente une chaine hifi
