@@ -1,4 +1,4 @@
-
+import thermos.Thermostat;
 
 public class Main {
 
@@ -18,8 +18,10 @@ public class Main {
 		t.ajouterAppareil(H1);
 		t.ajouterAppareil(CH11);
 
+		Thermostat T1 = new Thermostat();
+		AdapterThermostat T11 = new AdapterThermostat(T1);
+		t.ajouterAppareil(T11);
 		TelecommandeGraphique tg=new TelecommandeGraphique(t);
-
 
 
 	}
